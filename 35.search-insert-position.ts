@@ -10,7 +10,7 @@
  * @param {number} target
  * @return {number}
  */
-var searchInsert = function(nums, target) {
+var searchInsert = function(nums: number[], target: number): number {
   const len = nums.length;
   if (len === 0) return 0;
   if (target > nums[len - 1]) return len;

@@ -9,7 +9,7 @@
  * @param {number} x
  * @return {boolean}
  */
-var isPalindrome = function(x) {
+var isPalindrome = function(x: number): boolean {
   return x.toString() === x.toString().split('').reverse().join('');
 };
 // @lc code=end
