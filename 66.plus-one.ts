@@ -6,7 +6,7 @@
 
 // @lc code=start
 function plusOne(digits: number[]): number[] {
-  const s = (+digits.join('') + 1).toString();
+  const s = (BigInt(digits.join('')) + 1n).toString();
   const r: number[] = [];
   for (let i = 0; i < s.length; i++) {
     r[i] = +s[i];
