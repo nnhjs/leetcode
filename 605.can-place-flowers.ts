@@ -9,6 +9,7 @@ function canPlaceFlowers(flowerbed: number[], n: number): boolean {
   if(flowerbed.length === 1 && flowerbed[0] === 0) return true;
 
   let plotsAcceptable = 0;
+  
   if(flowerbed[0] === 0 && flowerbed[1] === 0) {
     plotsAcceptable += 1;
     flowerbed[0] = 1;
